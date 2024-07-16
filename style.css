@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2a425a;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(15, 40px); /* 50 columns, each 30px wide */
+    grid-template-rows: repeat(20, 40px); /* 75 rows, each 30px high */
+    gap: 1px; /* Gap between grid cells */
+    background-color: #333333;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    position: relative;
+}
+
+.game-grid .cell {
+    background-color: #444444;
+    border: 1px solid #666666;
+}
+
+.score {
+    color: whitesmoke;
+    padding-right: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
